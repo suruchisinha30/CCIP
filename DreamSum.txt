@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int n, arr[20], i, sum=0;
+     cin>>n;
+    for(i=0; i<n; i++)
+    {
+        cin>>arr[i];
+    }
+     if(n%2==0){
+        for(i=0; i<n; i++){
+            sum= sum + arr[i] ;
+        }    
+            if(sum== -1)
+            cout<< "Yes";
+     }
+     else
+          cout<<"No";
+     
+    return 0;
+}
