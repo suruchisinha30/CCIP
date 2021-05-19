@@ -1,0 +1,19 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    string S1;
+    string S2= "ra";
+    cin>> S1;
+    if (S1.find(S2)!= std::string::npos)
+    std::cout << "Yes" << '\n';
+    else
+        std::cout << "No";
+    return 0;
+}
