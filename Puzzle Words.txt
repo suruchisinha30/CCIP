@@ -1,0 +1,16 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    string S1;
+    cin>> S1;
+    transform(S1.begin(), S1.end(), S1.begin(), ::toupper);
+    cout<< S1;
+    return 0;
+}
