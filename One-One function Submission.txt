@@ -1,0 +1,25 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int n, m,result=0,i,fact1=1, fact2=1, difference=0;
+    cin>>n;
+    cin>>m;
+    for(i=1;i<=n;i++){
+        fact1=fact1*i;
+        }
+    difference= n-m;
+    
+    for(i=1;i<=difference;i++){
+        fact2=fact2*i;
+        }
+    result= fact1/fact2;
+    cout<<result;
+    return 0;
+}
